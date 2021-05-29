@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
      <style>
          .my-container{
             border: 1px black;
@@ -22,30 +25,69 @@
              background-color: skyblue;
          }
          .my-col1{
-             background-color: whitesmoke;
+             background-color:  rgb(97, 90, 90);
          }
          .mycol{
              border: 1px solid black;
          }
+         .mybtn{
+           width: max-content;
+         }
      </style>
 </head>
 <body>
-  <h2 style="color:black; padding: top 2cm;"> Full Screen Presentation Setting</h2>
-    <div class="container my-container">
-        <div class="row">
-        <div class="col-4 my-col">
-            Review
-            </div>
-            <div class="col-4 my-col">
-                User Test
-            </div>
-            <div class="col-4 my-coll">
-                Custom
-            </div>
+ <div class="container">
+   <div class="row">
+     <div class="col">
+      <div class="card">
+        <div class="card-title h5" style="margin: 1rem 0.8rem 0 0.8rem;">Full Screen Presentation Setting
         </div>
+        <hr>
+        <div class="btn-group m-3" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary">Review</button>
+            <button type="button" class="btn btn-outline-primary">User Test</button>
+            <button type="button" class="btn btn-primary">Custom</button>
+        </div>
+     </div>
+   </div>
+ </div>
         <div class="row">
+            <div class="col-sm mycol">
+                <div class="row">
+                  <div class="col-md-4">
+                    <span>
+                      Show/Hide
+                  </span>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="xd">
+                          <label for="xd">Navigator</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="xd">
+                        <label for="xd">Notes</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" id="xd">
+                        <label for="xd">Comments</label>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm mycol">Shortcut</div>
             <div class="col-sm mycol">Show
-                <div class="input-group mb-3">
+                              <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
                         <input type="checkbox" aria-label="Checkbox for following text input" id="xd">
@@ -71,14 +113,15 @@
                   </div>
             </div>
             <div class="col-sm mycol">Shortcut</div>
-            <div class="col-sm mycol">Show</div>
-            <div class="col-sm mycol">Shortcut</div>
         </div>
         <div class="row"><div class="col">
             
         </div>
+        <button type="button" class="btn btn-primary btn-sm mybtn">Close</button>
+
 
     </div>
+    </center>
     </div>
 </body>
 </html>
